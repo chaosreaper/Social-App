@@ -1,0 +1,126 @@
+.mainnav_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+.mainnav_container svg{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s linear;
+}
+
+.mainnav_container svg:hover{
+    color: #2c8ac7;
+}
+
+/*nav_desc*/
+.nav_desc img{
+    width: 60px;
+    height: 60px;
+}
+
+.nav_desc div{
+    cursor: pointer;
+}
+.nav_desc h1, .nav_desc svg{
+    display: none;
+    color: #fff;
+    pointer-events: none;
+}
+
+
+/*nav_search*/
+.nav_search{
+    position: relative;
+    margin: 10px 0 10px 5%;
+}
+
+.nav_search input{
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: #2c8ac7;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(90deg,#2c8ac7,#2c8ac7) center bottom / 0% 3px no-repeat,
+                linear-gradient(90deg,#d5d5d5,#d5d5d5) center bottom / 100% 3px no-repeat;
+    transition: .5s ease;
+}
+
+.nav_search input:focus{
+    background-size: 100% 3px , 100% 3px;
+}
+
+.search_results{
+    position: fixed;
+    top: 60px;
+    background-color: #fff;
+    background-color: #141c24;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #2c8ac7;
+    transition: .3s ease;
+    overflow: auto;
+}
+.search_results div{
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search_results div:nth-child(odd){
+    background-color: #10181d;
+}
+
+.search_results img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*nav_items*/
+.nav_items{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*media query*/
+
+@media only screen and (max-width:900px){
+    .mainnav_container{
+        flex-direction: column;
+    }
+
+    .nav_desc{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_desc h1, .nav_desc svg{
+        display: block;
+    }
+    
+    .search_results{
+        top: 120px;
+    }
+
+    .nav_items{
+        width: 20%;
+        margin: 10px 0 10px 5%;
+    }
+}

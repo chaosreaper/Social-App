@@ -1,0 +1,61 @@
+.usernav_container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.usernav_container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.usernav_container >span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    top: 65%;
+    left: 55%;
+    pointer-events: none;
+}
+
+.notif_container{
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    background-color: #fff;
+    background-color: #141c24;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #2c8ac7;
+    transition: .3s ease;
+    overflow: auto;
+}
+
+.notif_container .notif{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.notif span{
+    color: #2c8ac7;
+    font-weight: bold;
+}
+
+.notif img{
+    margin-right: 10px;
+}
+
+.notif_container .notif:nth-child(odd){
+    background-color: #10181d;
+}

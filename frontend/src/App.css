@@ -1,0 +1,72 @@
+.container{
+    padding: 100px 2%;
+}
+
+.alert{
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 25;
+    top: -10vh;
+    left: 32vw;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+.showAlert{
+    top: 10vh;
+}
+/**************************************************************************/
+.previewImg_container{
+    position: fixed;
+    margin: 0.5vh 0.5%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.previewImg_container svg{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.global_img_preview{
+    object-fit: scale-down;
+    max-height: 100%;
+    max-width: 100%;
+    pointer-events: none;
+}
+
+
+/***************** POST CREATION *****************/
+.showCreate-enter{
+
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+.showCreate-enter-active{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.showCreate-exit{
+}
+
+.showCreate-exit-active{
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}

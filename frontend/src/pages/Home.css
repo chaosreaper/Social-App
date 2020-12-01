@@ -1,0 +1,31 @@
+.home_container{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 50px;
+}
+
+.home_profile{
+    position: fixed;
+    width: 30%;
+}
+
+.home_posts{
+    grid-column: 2/3;
+}
+
+
+.loading{
+    margin: 0 49%;
+}
+
+
+@media only screen and (max-width:900px){
+    .home_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .home_profile{
+        display: none;
+    }
+}

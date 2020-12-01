@@ -1,0 +1,121 @@
+.CreatePost{
+    position: fixed;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    top: 10vh;
+}
+
+.CreatePost label{
+    color: #fff;
+}
+
+.create_container{
+    width: 500px;
+    height: 480px;
+    box-shadow: 0px 0px 5px #3498db ;
+    background-color: #0e1419;
+    padding: 20px 30px;
+    pointer-events: all;
+    border-radius: 20px;
+}
+
+.create_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create_content svg{
+    position: absolute;
+    left: 98%;
+    top: -10px;
+    color: red;
+    cursor: pointer;
+}
+
+.create_content textarea{
+    height: 100px;
+    margin: 5px 0 10px;
+    background-color: transparent;
+    resize: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: 2px solid #3498db;
+
+}
+
+.create_img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.create_img label:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+svg.postImg{
+    font-size: 50px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+svg.postImg:hover{
+    color: #3498db;
+}
+
+.create_img label:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.imgDisplay{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    height: 250px;
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.imgDisplay img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.create_container button{
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #3498db;
+    font-size: 120%;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 7px;
+    border: 1px solid #3498db;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.create_container button:hover{
+    background-color: transparent;
+    color: #3498db;
+}
+
+.create_container button:active{
+    background-color: #3498db;
+    color: #fff;
+}
